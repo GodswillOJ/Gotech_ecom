@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Responsive Menu</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4c4cf0b696.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Gotech</div>
+    
+
+    <ul class="nav">
+      <li class="has-submenu">
+          <a id="nav_link" href="#"><i class="fa-solid fa-user"></i> Account</a>
+          <ul class="submenu">
+            <a href="/user/login"><li>Login</li></a>
+            <a href="/user/register"><li>Register</li></a>
+            <a href="/user/about"><li>About</li></a>
+            <a href="/user/contact"><li>Contact</li></a>
+          </ul>
+      </li>
+      <li> <a id="nav_link" href="#"><i class="fa-solid fa-circle-info"></i> Q/E</a></li>
+      <li><a id="nav_link" href="#"><i class="fa-solid fa-cart-shopping"></i> Orders</a></li>                   
+    </ul>
+    
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+
+      <!-- highlights -->
+        <div class="highlights">
+          <div class="New" style=""><h6>What's new</h6></div>
+          <!-- Slider main container -->
+          <div class="new_trends swiper">
+              <!-- Additional required wrapper -->
+              <div id="swip_wrap" class="swiper-wrapper">
+                <!-- Slides -->
+              
+                  <div  class="swiper-slide"></div>
+                
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            
+              <!-- If we need navigation buttons -->
+            <div id="swip_cont">
+                        <!-- Swiper arrows -->
+                        <div id="swip" class="swiper-button-prev">
+                          <i class="ri-arrow-left-s-line"></i>
+                      </div>
+
+                      <div id="swip" class="swiper-button-next">
+                          <i class="ri-arrow-right-s-line"></i>
+                      </div>
+              </div>
+          </div>       
+        </div>
+
+        <!-- for site name -->
+      <div class="home_nav_sec">
+          <div class="sub_class_menu">
+              <a href="#"><li class="cat_nav" style="padding: 10px;">All</li></a>
+              <a href="/commodity"><li class="cat_nav" style="padding: 10px;">Commodities</li></a>
+              <a href="/electronics"><li class="cat_nav" style="padding: 10px;">Electronics</li></a>
+              <a href="/services"><li class="cat_nav" style="padding: 10px;">Services</li></a>
+          </div>
+          <div class="sub_class_search ">
+            <img src="images/search-icon.png" alt="Search" class="search-icon" onclick="toggleSearch()">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+          </div>
+
+          <script>
+            function toggleSearch() {
+              const searchInput = document.getElementById('searchInput');
+              searchInput.classList.toggle('search-input-active');
+              searchInput.focus();
+            }
+          </script>
+      </div>
+
+      <div class="background_info">
+                
+        <div class="background_details">
+            <h3>Get an Item near you</h3>
+            <h1>Enter Mami market online</h1>
+            <a href="/user/login"><button class="button-default">See More</button></a>
+        </div>
+
+        <div class="admin_post">
+          <div class="post_block">
+              <div class="links">
+                  <a href="#">all</a>
+                  <a href="#">mails</a>
+                  <a href="#">setings</a>
+                  <a href="#">New</a>
+                  <a href="#">About</a>
+              </div>
+          </div>
+          <div class="single_cont">
+              <div class="swip_commodity_wrap">
+                  <div class="single_swip swiper">
+                      <div class="single_swip_wrap swiper-wrapper">
+                      
+                          <div class="single_commodity swiper-slide">
+                              <div class="single-data">
+                                  <h3>New Plasma TV</h3>
+                                  <a href="/user/login"><button class="button-default">See More</button></a>
+                              </div>
+                          </div>
+                
+                      </div>
+                                                 <!-- If we need navigation buttons -->
+                      
+                                                   <!-- Swiper arrows -->
+                          <div  class="swiper-button-next">
+                          <i id="swip_arrow" class="ri-arrow-right-s-line"></i>
+                          </div>
+
+                          <div  class="swiper-button-prev">
+                          <i id="swip_arrow" class="ri-arrow-left-s-line"></i>
+                          </div>
+                      
+                  </div>
+              </div>
+
+
+              <div class="post_block3">
+                  <div class="post_content_wrap">
+                      <div class="cat_names"><h2>Commodities</h2></div>
+                      <div class="post_wrap">
+
+                  
+                              
+                             
+                                 <div id="post_content" style="background-image: url('images/plasma.jpg');">
+                                  
+                                     <div class="admin_post_des">    
+                                         <h4 class="post_title">Get a Flat Screen TV</h4>
+                                         <p>Lorem ipsum dolor sit amet.</p>
+                                         <a href="/user/login"><button class="button-default">See More</button></a>
+                                     </div>
+             
+                                 </div>
+             
+
+                      </div>
+                  </div>
+
+                  
+                  <div class="post_content_wrap">
+                          <div class="cat_names"><h2>Services</h2></div>
+                          <div class="post_wrap">
+
+                                 
+                                     <div id="post_content" style="background-image: url('images/airtime.jpg')">
+             
+                                         <div class="admin_post_des">    
+                                             <h4 class="post_title">Recharge your network</h4>
+                                             <p>Lorem ipsum dolor sit amet.</p>
+                                             <a href="/user/login"><button class="button-default">See More</button></a>
+                                         </div>
+                 
+                                     </div>
+                 
+
+                          </div>
+                  </div>
+
+                  <div class="post_content_wrap">
+                          <div class="cat_names"><h2>Electronics</h2></div>
+                          <div class="post_wrap">
+
+                                 
+                                     <div id="post_content" style="background-image: url('images/iphone.jpg')">
+             
+                                         <div class="admin_post_des">    
+                                             <h4 class="post_title">New Iphone</h4>
+                                             <p>Lorem ipsum dolor sit amet.</p>
+                                             <a href="/user/login"><button class="button-default">See More</button></a>
+                                         </div>
+                 
+                                     </div>
+                 
+
+                          </div>
+                  </div>
+   
+                  
+              </div>
+
+
+          
+          </div>
+          <div>
+            <div class="post_block1">
+              <div class="cat_names"><h2>Trending</h2></div>
+                  <div class="trend_carrier">
+                      <div class="trends_image_post">
+                          <p><b></b></p>
+                          <a href="/user/login"><button class="button-default">See More</button></a>
+                      </div>
+                      <div class="admin_post_info">
+                          <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, perspiciatis.</p>
+                      </div>
+                  </div>        
+          </div>
+          </div>
+        </div>
+     </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
