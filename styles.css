@@ -1,14 +1,14 @@
 html{
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 header {
@@ -98,7 +98,7 @@ main{
 .home_nav_sec{
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 20% 0 0;
   padding-top: 3rem;
   align-items: center;
 }
@@ -294,7 +294,8 @@ button {
   }
   /* ... (previous styles) */
   .home_nav_sec{
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .submenu {
     width: 100%;
@@ -331,7 +332,7 @@ button {
   .sub_class_menu a{
     padding-left: 0;
   }
-  /* for hmoe_nav_sec */
+  /* for hmoe_nav_s+ec */
   .sub_class_search {
     position: relative;
     text-decoration: none;
@@ -355,3 +356,8 @@ button {
   }
 }
 
+@media (max-width: 335px) {
+  html{
+    width: 150%;
+  }
+}
