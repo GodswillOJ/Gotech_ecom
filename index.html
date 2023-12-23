@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Responsive Menu</title>
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/4c4cf0b696.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.css">
 </head>
 <body>
   <header>
@@ -55,11 +56,11 @@
               <!-- If we need navigation buttons -->
             <div id="swip_cont">
                         <!-- Swiper arrows -->
-                        <div id="swip" class="swiper-button-prev">
+                        <div id="swip l1" class="swiper-button-prev">
                           <i class="ri-arrow-left-s-line"></i>
                       </div>
 
-                      <div id="swip" class="swiper-button-next">
+                      <div id="swip l2" class="swiper-button-next">
                           <i class="ri-arrow-right-s-line"></i>
                       </div>
               </div>
@@ -99,11 +100,11 @@
         <div class="admin_post">
           <div class="post_block">
               <div class="links">
-                  <a href="#">all</a>
-                  <a href="#">mails</a>
-                  <a href="#">setings</a>
-                  <a href="#">New</a>
-                  <a href="#">About</a>
+                  <a href="#"><li>All</li></a>
+                  <a href="#"><li>Mail</li></a>
+                  <a href="#"><li>settings</li></a>
+                  <a href="#"><li>New</li></a>
+                  <a href="#"><li>About</li></a>
               </div>
           </div>
           <div class="single_cont">
@@ -111,9 +112,29 @@
                   <div class="single_swip swiper">
                       <div class="single_swip_wrap swiper-wrapper">
                       
-                          <div class="single_commodity swiper-slide">
+                          <div class="single_commodity swiper-slide" style="background-image: url('images/airtime.jpg');">
+                              <div class="single-data">
+                                  <h3>New Airtime</h3>
+                                  <a href="/user/login"><button class="button-default">See More</button></a>
+                              </div>
+                          </div>
+
+                          <div class="single_commodity swiper-slide" style="background-image: url('images/plasma.jpg');">
                               <div class="single-data">
                                   <h3>New Plasma TV</h3>
+                                  <a href="/user/login"><button class="button-default">See More</button></a>
+                              </div>
+                          </div>
+                          
+                          <div class="single_commodity swiper-slide" style="background-image: url('images/iphone.jpg');">
+                              <div class="single-data">
+                                  <h3>New Iphone</h3>
+                                  <a href="/user/login"><button class="button-default">See More</button></a>
+                              </div>
+                          </div>
+                          <div class="single_commodity swiper-slide" style="background-image: url('images/shoper.jpg');">
+                              <div class="single-data">
+                                  <h3>New Shopper</h3>
                                   <a href="/user/login"><button class="button-default">See More</button></a>
                               </div>
                           </div>
@@ -206,7 +227,7 @@
               <div class="cat_names"><h2>Trending</h2></div>
                   <div class="trend_carrier">
                       <div class="trends_image_post">
-                          <p><b></b></p>
+                          <p><b>Gotech</b></p>
                           <a href="/user/login"><button class="button-default">See More</button></a>
                       </div>
                       <div class="admin_post_info">
@@ -218,6 +239,8 @@
         </div>
      </div>
   </main>
-  <script src="script.js"></script>
+  <script src="/scripts/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/swiper-finc.js"></script>
 </body>
 </html>

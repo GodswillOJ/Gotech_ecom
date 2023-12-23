@@ -11,3 +11,5 @@ document.getElementById('mobile-menu').addEventListener('click', function () {
     submenu.style.display = (submenu.style.display === 'block' ? 'none' : 'block');
   });
 });
+
+
