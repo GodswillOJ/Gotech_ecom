@@ -186,7 +186,7 @@ body {
   .background_info{
     position: relative;
     height: 20rem;
-    background-image: url('/images/shoper.jpg');
+    background-image: url('../images/shoper.jpg');
     background-position: center;
     background-size:cover;
     margin: 0 20px 0 20px;
@@ -264,7 +264,7 @@ body {
     text-align: center;
   }
   .trends_image_post{
-    background-image: url('/images/shoper.jpg');
+    background-image: url('../images/shoper.jpg');
     position: relative;
     height: 10rem;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
@@ -467,7 +467,7 @@ body {
     text-align: center;
    }
    .post_block1{
-    margin-top: 10%;
+    margin-top: 30rem;
     padding: 0 7% 0 7%;
     border: ipx solid #2980b9;
   }
